@@ -14,7 +14,7 @@
     - name: Install dependencies
       apt:
         name: "{{ packages }}"
-        state: absent
+        state: latest
         update_cache: yes
       vars:
         packages:
@@ -27,17 +27,17 @@
     - name: Add an apt signing key for Docker
       apt_key:
         url: https://download.docker.com/linux/ubuntu/gpg
-        state: absent
+        state: latest
 
     - name: Add apt repository for stable version
       apt_repository:
         repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
-        state: absent
+        state: latest
 
     - name: Install Docker
       apt:
         name: "{{ packages }}"
-        state: absent
+        state: latest
         update_cache: yes
       vars:
         packages:
