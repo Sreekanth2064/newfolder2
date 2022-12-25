@@ -29,7 +29,7 @@
 #172.173.184.74 ansible_ssh_user=sreekanth2 ansible_ssh_pass=86@Sreekanth
 #20.168.226.252 ansible_ssh_user=sreekanth3 ansible_ssh_pass=86@Sreekanth
 
-20.247.98.100 ansible_ssh_user="terraform" ansible_ssh_pass="Terraform1234!"
+20.205.6.141 ansible_ssh_user="terraform" ansible_ssh_pass="Terraform1234!"
 
 
 [all:vars]
